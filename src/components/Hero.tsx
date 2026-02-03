@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
     <section className="px-8 py-32 text-center max-w-5xl mx-auto">
-      <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-        Ecommerce built to <span className="text-purple-400">convert</span>,  
+      <h1 className="hero-title text-5xl md:text-6xl font-extrabold leading-tight">
+        Ecommerce built to <span className="hero-highlight">convert</span>,  
         not just exist.
       </h1>
 
-      <p className="mt-6 text-gray-400 text-lg">
+      <p className="mt-6 text-lg text-secondary">
         malicc is a neuromarketing-driven D2C ecommerce SaaS that embeds consumer
         psychology directly into your store, checkout, and messaging —
         ethically, transparently, and at scale.
@@ -15,13 +15,14 @@ export default function Hero() {
       <div className="mt-10 flex justify-center gap-4">
         <a
           href="#cta"
-          className="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg font-semibold"
+          className="btn-primary px-6 py-3 rounded-lg font-semibold"
         >
           Join the Waitlist
         </a>
+
         <a
           href="#features"
-          className="border border-gray-600 px-6 py-3 rounded-lg text-gray-300 hover:text-white"
+          className="btn-secondary px-6 py-3 rounded-lg"
         >
           See how it works
         </a>

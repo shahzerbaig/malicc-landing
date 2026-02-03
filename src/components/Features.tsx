@@ -19,15 +19,14 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="px-8 py-24 bg-zinc-900">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+    <section id="features" className="section section-tight surface-dark">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {features.map((f) => (
-          <div
-            key={f.title}
-            className="p-8 rounded-xl bg-black border border-zinc-800"
-          >
-            <h3 className="text-xl font-semibold mb-3">{f.title}</h3>
-            <p className="text-gray-400">{f.desc}</p>
+          <div key={f.title} className="card p-8">
+            <h3 className="text-xl font-semibold text-primary mb-3">
+              {f.title}
+            </h3>
+            <p className="text-secondary">{f.desc}</p>
           </div>
         ))}
       </div>

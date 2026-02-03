@@ -24,24 +24,27 @@ export default function WaitlistForm() {
   }
 
   return (
-    <div className="mt-12 max-w-xl mx-auto">
+    <div className="mt-12 max-w-xl mx-auto px-4 sm:px-0">
       {submitted ? (
-        <div className="rounded-2xl border border-green-500/30 bg-green-500/10 p-8 text-center">
-          <h3 className="text-2xl font-semibold text-green-300">
+        /* ---------- Success State ---------- */
+        <div className="surface-glass p-8 text-center">
+          <h3 className="text-2xl font-semibold text-success">
             You’re in.
           </h3>
-          <p className="mt-3 text-green-200/80">
+
+          <p className="mt-3 text-secondary">
             Early access secured. We’ll reach out before the crowd does.
           </p>
         </div>
       ) : (
-        <div className="rounded-2xl border border-white/10 bg-black/40 backdrop-blur-xl p-8 shadow-xl">
-          <h3 className="text-2xl font-semibold">
+        /* ---------- Form State ---------- */
+        <div className="surface-glass p-8">
+          <h3 className="text-2xl font-semibold text-primary">
             Join the early access list
           </h3>
 
-          <p className="mt-2 text-gray-400 text-sm">
-            For builders who care about conversion, not cosmetics.
+          <p className="mt-2 text-muted text-sm">
+            Built for founders who care about conversion, not cosmetics.
           </p>
 
           <form
@@ -56,11 +59,13 @@ export default function WaitlistForm() {
               required
               placeholder="you@brand.com"
               className="
-                px-4 py-3 rounded-lg
-                bg-zinc-900 text-white
+                w-full
+                px-4 py-3
+                rounded-lg
+                bg-zinc-900 text-primary
                 border border-zinc-700
                 focus:outline-none focus:ring-2 focus:ring-purple-500
-                placeholder:text-zinc-500
+                placeholder:text-muted
               "
             />
 
@@ -70,32 +75,35 @@ export default function WaitlistForm() {
               name="entry.1582825926"
               placeholder="Brand or company (optional)"
               className="
-                px-4 py-3 rounded-lg
-                bg-zinc-900 text-white
+                w-full
+                px-4 py-3
+                rounded-lg
+                bg-zinc-900 text-primary
                 border border-zinc-700
                 focus:outline-none focus:ring-2 focus:ring-purple-500
-                placeholder:text-zinc-500
+                placeholder:text-muted
               "
             />
 
             <button
               type="submit"
               disabled={loading}
-              className="
-                mt-2 flex items-center justify-center gap-2
-                bg-gradient-to-r from-purple-500 to-indigo-500
-                hover:from-purple-600 hover:to-indigo-600
-                text-white font-semibold
-                px-6 py-3 rounded-lg
+              className={`
+                mt-2
+                w-full
+                px-6 py-3
+                rounded-lg
+                font-semibold
                 transition-all
-                disabled:opacity-60
-              "
+                btn-primary
+                ${loading ? "btn-disabled" : ""}
+              `}
             >
               {loading ? "Joining…" : "Join the waitlist"}
             </button>
           </form>
 
-          <p className="mt-4 text-xs text-gray-500 text-center">
+          <p className="mt-4 text-xs text-muted text-center">
             No spam. No selling. Just early access.
           </p>
         </div>
