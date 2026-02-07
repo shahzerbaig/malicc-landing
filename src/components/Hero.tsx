@@ -12,7 +12,7 @@ export default function Hero() {
         ethically, transparently, and at scale.
       </p>
 
-      <div className="mt-10 flex justify-center gap-4">
+      <div className="mt-10 flex flex-wrap justify-center gap-4">
         <a
           href="#cta"
           className="btn-primary px-6 py-3 rounded-lg font-semibold"
@@ -25,6 +25,15 @@ export default function Hero() {
           className="btn-secondary px-6 py-3 rounded-lg"
         >
           See how it works
+        </a>
+
+        <a
+          href="https://shop.malicc.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 rounded-lg font-semibold border border-primary hover:bg-primary hover:text-white transition"
+        >
+          View Live Demo →
         </a>
       </div>
     </section>
