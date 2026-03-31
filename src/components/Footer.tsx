@@ -8,6 +8,9 @@ export default function Footer() {
       <Link href="/privacy" className="">Privacy Policy</Link>
     <br />
       <Link href="/terms-and-conditions">Terms and Condition</Link>
+
+      <br />
+      <Link href="/data-deletion">Data Deletion</Link>
     </footer>
   );
 }
