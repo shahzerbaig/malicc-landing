@@ -161,3 +161,36 @@ body {
   color: var(--color-text-secondary);
 }
 
+
+
+
+/* Navigation */
+
+/* Mobile Navigation */
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown .25s ease;
+}
+
+.animate-slideUp {
+  animation: slideUp .2s ease;
+}
