@@ -10,7 +10,7 @@ export default function Logo() {
 
       <div className="leading-none">
         <div className="font-bold text-lg">
-          malicc
+          malicc 
         </div>
 
         <div className="text-xs text-secondary">
