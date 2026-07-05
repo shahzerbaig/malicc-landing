@@ -43,7 +43,7 @@ return (<Section>
             </Button>
 
             <Button
-                href="/demo"
+                href="/bookademo"
                 variant="secondary"
             >
 
