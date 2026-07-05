@@ -1,20 +1,35 @@
-import Navbar from "@/components/Navigation/Navbar";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import HowItWorks from "@/components/HowItWorks";
-import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import Pricing from "@/components/Pricing";
+
+import Navbar from "@/components/navigation/Navbar";
+
+import Hero from "@/components/home/Hero";
+import ProductShowcase from "@/components/home/ProductShowcase";
+import BuiltFor from "@/components/home/BuiltFor";
+import WhyMalicc from "@/components/home/WhyMalicc";
+import Spotlight from "@/components/home/Spotlight";
+import FinalCTA from "@/components/home/FinalCTA";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Pricing />
-      <CTA />
+
+      <main>
+
+        <Hero />
+
+        <ProductShowcase />
+
+        <BuiltFor />
+
+        <WhyMalicc />
+
+        <Spotlight />
+
+        <FinalCTA />
+
+      </main>
+
       <Footer />
     </>
   );
