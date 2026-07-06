@@ -45,7 +45,7 @@ export default function DesktopNavigation() {
 
                             <Link
                 href="/careers"
-                className="block text-primary"
+              className="text-sm font-medium text-secondary transition hover:text-primary"
               >
                 Careers
               </Link>
