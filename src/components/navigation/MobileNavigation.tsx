@@ -242,6 +242,13 @@ export default function MobileNavigation() {
                 Company
               </Link>
 
+                            <Link
+                href="/careers"
+                className="block text-primary"
+              >
+                Careers
+              </Link>
+
             </div>
 
           </div>
