@@ -63,7 +63,7 @@ export default function Hero() {
                         </Button>
 
                         <Button
-                            href="/demo"
+                            href="/bookademo"
                             variant="secondary"
                         >
 

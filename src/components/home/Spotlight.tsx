@@ -80,7 +80,7 @@ export default function Spotlight() {
               </Button>
 
               <Button
-                href="/demo"
+                href="/bookademo"
                 variant="secondary"
               >
 

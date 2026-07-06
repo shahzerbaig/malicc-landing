@@ -48,7 +48,7 @@ export default function DesktopNavigation() {
       <div className="flex items-center gap-3">
 
         <Link
-          href="/demo"
+          href="/bookademo"
           className="
             rounded-lg
             border

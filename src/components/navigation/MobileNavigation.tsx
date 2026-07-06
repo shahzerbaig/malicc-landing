@@ -251,7 +251,7 @@ export default function MobileNavigation() {
           <div className="border-t border-border p-6 space-y-3">
 
             <Link
-              href="/demo"
+              href="/bookademo"
               className="
                 block
                 rounded-xl
