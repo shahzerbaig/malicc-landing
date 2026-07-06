@@ -41,6 +41,14 @@ export default function DesktopNavigation() {
           Company
         </Link>
 
+          
+
+                            <Link
+                href="/careers"
+                className="block text-primary"
+              >
+                Careers
+              </Link>
       </div>
 
       {/* Right Side */}
