@@ -1,6 +1,4 @@
-import Footer from "@/components/Footer";
 
-import Navbar from "@/components/navigation/Navbar";
 
 import Hero from "@/components/home/Hero";
 import ProductShowcase from "@/components/home/ProductShowcase";
@@ -12,7 +10,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      
 
       <main>
 
@@ -30,7 +28,7 @@ export default function Home() {
 
       </main>
 
-      <Footer />
+      
     </>
   );
 }
