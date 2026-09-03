@@ -1,8 +1,8 @@
+import ProductPage from "@/components/product/ProductPage";
+import { tinyCommerce } from "@/data/products/tiny-commerce";
+
 export default function TinyCommercePage() {
   return (
-    <div>
-      <h1>Tiny Commerce</h1>
-      <p>Welcome to our Tiny Commerce product page!</p>
-    </div>
+    <ProductPage product={tinyCommerce} />
   );
 }
